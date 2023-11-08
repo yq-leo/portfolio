@@ -35,9 +35,9 @@
   border-radius: 50%;
   border: 5px solid #fff;
   position: relative;
-  left: 50%;
+  left: 35%;
   /* TODO: check for compactability issue (translate) */
-  translate: -70%;
+  translate: -50%;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -70,8 +70,8 @@
   font-weight: 500;
   line-height: 2;
   position: relative;
-  left: 50%;
-  transform: translateX(-70%);
+  left: 35%;
+  transform: translateX(-50%);
   transition-property: background-color, color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -109,7 +109,7 @@
     width: 16vh;
     height: 16vh;
     margin: 4vh 0;
-    translate: -50%;
+    left: 50%;
   }
 
   .homepage-info-title {
@@ -124,7 +124,7 @@
   .homepage-info-resume-btn {
     font-size: 2.5vh;
     padding: 1vw 10vh;
-    transform: translateX(-50%);
+    left: 50%;
     margin: 4vh 0;
   }
 }
