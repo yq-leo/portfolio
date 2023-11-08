@@ -1,0 +1,130 @@
+.homepage {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.homepage-block {
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.homepage-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 40vw;
+}
+
+.homepage-info-item {
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  color: #fdfdfd;
+  margin: 2vh 0;
+}
+
+.homepage-info-selfie {
+  margin: 5vh 0;
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: relative;
+  left: 50%;
+  /* TODO: check for compactability issue (translate) */
+  translate: -70%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.homepage-info-selfie:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.homepage-info-title {
+  font-size: 3.3vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.homepage-info-content {
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin-top: 5vh;
+}
+
+.homepage-info-resume-btn {
+  display: inline-block;
+  margin: 5vh 0;
+  padding: 1vh 6vw;
+  border-radius: 1.2vh;
+  background-color: #0062ff;
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-70%);
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.homepage-info-resume-btn:hover {
+  background-color: #fff;
+  color: #0062ff;
+}
+
+.uiuc-organge {
+  color: #ff5f0f;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    height: 90vh;
+  }
+
+  .homepage-block:nth-of-type(2) {
+    display: none;
+  }
+
+  .homepage-info {
+    width: 80vw;
+    transform: translate(-50%, -60%);
+  }
+
+  .homepage-info-item {
+    margin: 1.5vh 0;
+    text-align: center;
+  }
+
+  .homepage-info-selfie {
+    width: 13vh;
+    height: 13vh;
+    margin: 4vh 0;
+    translate: -50%;
+  }
+
+  .homepage-info-title {
+    font-size: 3.7vh;
+  }
+
+  .homepage-info-content {
+    font-size: 1.8vh;
+    margin-top: 4vh;
+  }
+
+  .homepage-info-resume-btn {
+    font-size: 2vh;
+    padding: 1vw 6vh;
+    transform: translateX(-50%);
+    margin: 4vh 0;
+  }
+}
