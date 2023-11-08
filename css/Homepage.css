@@ -65,7 +65,7 @@
   padding: 1vh 6vw;
   border-radius: 1.2vh;
   background-color: #0062ff;
-  color: #fff;
+  color: #fdfdfd;
   font-size: 1.2vw;
   font-weight: 500;
   line-height: 2;
@@ -78,7 +78,7 @@
 }
 
 .homepage-info-resume-btn:hover {
-  background-color: #fff;
+  background-color: #fdfdfd;
   color: #0062ff;
 }
 

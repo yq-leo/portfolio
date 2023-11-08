@@ -27,6 +27,7 @@ a {
 
 .name-icon-wrapper {
   font-size: 3vh;
+  color: #111;
 }
 
 .name-icon-content {
@@ -72,7 +73,7 @@ a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 2vh;
-  color: #000;
+  color: #111;
   border-radius: 0.5vh;
   transition-property: background-color, color;
   transition-duration: 0.2s;
@@ -81,7 +82,7 @@ a {
 .nav-bar-list-item:hover {
   cursor: pointer;
   background-color: #0062ff;
-  color: #fff;
+  color: #fdfdfd;
 }
 
 .nav-bar-list-item > a {
