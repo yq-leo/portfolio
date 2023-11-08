@@ -12,10 +12,11 @@
 
     <link rel="stylesheet" href="css/NavBar.css" />
     <link rel="stylesheet" href="css/Homepage.css" />
+    <link rel="stylesheet" href="css/About.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- part 1: nav bar -->
+    <!-- part 1: Nav Bar -->
     <nav class="nav-bar">
       <header class="nav-bar-header">
         <div class="name-icon-wrapper">
@@ -32,7 +33,7 @@
           <a href="#">Home</a>
         </li>
         <li class="nav-bar-list-item" onclick="handleNavItemClick()">
-          <a href="#">About</a>
+          <a href="#section-about">About</a>
         </li>
         <li class="nav-bar-list-item" onclick="handleNavItemClick()">
           <a href="#">Experiences</a>
@@ -49,8 +50,8 @@
       </ul>
     </nav>
 
-    <!-- part 2: homepage -->
-    <section class="homepage">
+    <!-- part 2: Homepage -->
+    <section class="homepage" id="section-homepage">
       <div class="homepage-block">
         <div class="homepage-info">
           <img
@@ -81,6 +82,143 @@
       </div>
       <div class="homepage-block"></div>
     </section>
+
+    <!-- part 3: About -->
+    <section class="about" id="section-about">
+      <header class="about-title">About Me</header>
+      <div class="about-content">
+        <ul class="about-content-list">
+          <li class="about-content-list-item">
+            <header class="about-content-list-item-title">Introduction</header>
+            <article class="about-item-intro">
+              I’m currently a Master of Computer Science student at the
+              University of Illinois at Urbana-Champaign (UIUC). My general
+              interests lie in Front-End and Full-Stack development. I’m also a
+              machine learning & data science enthusiast and is passionate about
+              parallel algorithms and CUDA programming.
+            </article>
+          </li>
+          <li class="about-content-list-item">
+            <header class="about-content-list-item-title">Education</header>
+            <div class="about-item-edu-container">
+              <ul class="about-item-edu-list">
+                <li class="about-item-edu-list-item">
+                  <img
+                    class="about-school-logo"
+                    src="images/school_logos/uiuc_logo.jpg"
+                  />
+                  <div class="about-edu-item-container">
+                    <header class="about-edu-item-header">
+                      University of Illinois at Urbana-Champaign
+                    </header>
+                    <div class="about-edu-item-detail-container">
+                      <ul class="about-edu-item-detail-list">
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="degree">
+                            <span class="light-bold">
+                              Master of Computer Science
+                            </span>
+                            (2022.8 - 2024.5)
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="gpa">
+                            <span class="light-bold">GPA</span>
+                            : 3.94 / 4.0
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="coursework">
+                            <span class="light-bold">Coursework</span>
+                            : Distributed Systems, Database Systems, Manycore
+                            Parallel Algorithms, Applied Parallel Programming,
+                            Machine Learning, Computer Vision
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-edu-item-placeholder"></div>
+                </li>
+                <li class="about-item-edu-list-item">
+                  <img
+                    class="about-school-logo"
+                    src="images/school_logos/dlut_logo.png"
+                  />
+                  <div class="about-edu-item-container">
+                    <header class="about-edu-item-header">
+                      Dalian University of Technology
+                    </header>
+                    <div class="about-edu-item-detail-container">
+                      <ul class="about-edu-item-detail-list">
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="degree">
+                            <span class="light-bold">
+                              Bachelor of Engineering in Computer Science
+                            </span>
+                            (2018.9 -2022.7)
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="gpa">
+                            <span class="light-bold">GPA</span>
+                            : 90.4 / 100
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="coursework">
+                            <span class="light-bold">Coursework</span>
+                            : Operating Systems, Computer Networks, Computer
+                            Architecture, Object-Oriented Programming, Data
+                            Structures and Algorithms etc.
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-edu-item-placeholder"></div>
+                </li>
+                <li class="about-item-edu-list-item">
+                  <img
+                    class="about-school-logo"
+                    src="images/school_logos/ucla_logo.png"
+                  />
+                  <div class="about-edu-item-container">
+                    <header class="about-edu-item-header">
+                      University of California, Los Angeles
+                    </header>
+                    <div class="about-edu-item-detail-container">
+                      <ul class="about-edu-item-detail-list">
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="degree">
+                            <span class="light-bold">Summer Session</span>
+                            (2020.6 - 2020.8)
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="gpa">
+                            <span class="light-bold">GPA</span>
+                            : 4.0 / 4.0
+                          </span>
+                        </li>
+                        <li class="about-edu-item-detail-list-item">
+                          <span class="coursework">
+                            <span class="light-bold">Coursework</span>
+                            : Algorithms & Complexity
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-edu-item-placeholder"></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>

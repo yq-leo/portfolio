@@ -1,0 +1,103 @@
+.about {
+  background-color: #fafafa;
+  padding: 5vh 5vw;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.about-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.about-content-list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2.2vw;
+}
+
+.about-content-list-item {
+  display: block;
+  margin: 4vh 0;
+}
+
+.about-content-list-item-title {
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: #93b8c3;
+  margin-bottom: 1.5vh;
+}
+
+.about-item-intro {
+  font-size: 1.3vw;
+  line-height: 1.5;
+  color: #5b5e61;
+}
+
+.about-item-edu-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-item-edu-list-item {
+  display: flex;
+  align-items: center;
+  margin: 3vh 0;
+}
+
+.about-school-logo {
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 4vw;
+  margin-right: 2vw;
+}
+
+.about-edu-item-container {
+  flex: 2;
+}
+
+.about-edu-item-header {
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 0.5vh;
+}
+
+.about-edu-item-detail-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-edu-item-detail-list-item {
+  font-size: 1.2vw;
+  color: #5b5e61;
+  line-height: 1.5;
+}
+
+.degree::before {
+  content: "🎓 ";
+}
+
+.gpa::before {
+  content: "💯 ";
+}
+
+.coursework::before {
+  content: "📚 ";
+}
+
+.about-edu-item-placeholder {
+  flex: 1;
+}
+
+.light-bold {
+  font-weight: 500;
+}
