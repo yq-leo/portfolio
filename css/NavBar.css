@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: #dbdfe4;
+  height: 6vh;
+  width: 100vw;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1vh 1vw;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-bar-header {
+  display: flex;
+  flex: 1;
+}
+
+.name-icon-wrapper {
+  font-size: 3vh;
+}
+
+.name-icon-content {
+  font-family: "Lumanosimo", sans-serif;
+}
+
+.toggler {
+  display: none;
+}
+
+.toggler-line {
+  width: 4vh;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #5c5577;
+  margin: 1vh;
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+}
+
+.toggler-cross-1 {
+  transform: translateY(1.25vh) rotate(45deg);
+}
+
+.toggler-cross-2 {
+  opacity: 0;
+}
+
+.toggler-cross-3 {
+  transform: translateY(-1.25vh) rotate(-45deg);
+}
+
+.nav-bar-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-bar-list-item {
+  padding: 1vh 1.5vw;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 2vh;
+  color: #000;
+  border-radius: 0.5vh;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+}
+
+.nav-bar-list-item:hover {
+  cursor: pointer;
+  background-color: #0062ff;
+  color: #fff;
+}
+
+.nav-bar-list-item > a {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: block;
+    height: auto;
+  }
+
+  .name-icon-wrapper {
+    padding-left: 1vw;
+  }
+
+  .nav-bar-list {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-bar-list-item {
+    padding-left: 3vw;
+  }
+
+  .show {
+    max-height: 100vh;
+  }
+
+  .name-icon-wrapper {
+    flex: 1;
+  }
+
+  .toggler {
+    display: block;
+  }
+}
+
+.test {
+  font-size: 1rem;
+}
