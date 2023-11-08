@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 768px) {
   .homepage {
-    height: 90vh;
+    height: 80vh;
   }
 
   .homepage-block:nth-of-type(2) {
@@ -97,7 +97,7 @@
 
   .homepage-info {
     width: 80vw;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
   }
 
   .homepage-info-item {
@@ -106,23 +106,23 @@
   }
 
   .homepage-info-selfie {
-    width: 13vh;
-    height: 13vh;
+    width: 16vh;
+    height: 16vh;
     margin: 4vh 0;
     translate: -50%;
   }
 
   .homepage-info-title {
-    font-size: 3.7vh;
+    font-size: 4vh;
   }
 
   .homepage-info-content {
-    font-size: 1.8vh;
+    font-size: 2.2vh;
     margin-top: 4vh;
   }
 
   .homepage-info-resume-btn {
-    font-size: 2vh;
+    font-size: 2.5vh;
     padding: 1vw 6vh;
     transform: translateX(-50%);
     margin: 4vh 0;
