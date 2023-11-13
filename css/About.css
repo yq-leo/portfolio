@@ -18,7 +18,6 @@
 }
 
 .about-content-list {
-  list-style-type: none;
   padding: 0 2.2vw;
 }
 
@@ -38,10 +37,6 @@
   font-size: 1.3vw;
   line-height: 1.5;
   color: #5b5e61;
-}
-
-.about-item-edu-list {
-  list-style-type: none;
 }
 
 .about-item-edu-list-item {
@@ -69,10 +64,6 @@
   margin-bottom: 0.5vh;
 }
 
-.about-edu-item-detail-list {
-  list-style-type: none;
-}
-
 .about-edu-item-detail-list-item {
   font-size: 1.2vw;
   color: #5b5e61;
@@ -97,6 +88,138 @@
 
 .light-bold {
   font-weight: 500;
+}
+
+.about-tech-group-item {
+  margin: 1.5vh 0;
+}
+
+.about-tech-group-item > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.about-tech-group-item-name {
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #acc2dc;
+  margin-bottom: 1.2vh;
+}
+
+.about-tech-cat-list-item {
+  position: relative;
+  cursor: pointer;
+  margin: 1.2vh 0.5vw;
+}
+
+.tech-item-overview {
+  display: flex;
+  align-items: center;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 0.8rem 0.1rem #8ba2c7;
+  width: 13.8vw;
+  box-sizing: border-box;
+}
+
+.tech-item-overview-logo {
+  height: 4vw;
+  width: 4vw;
+  margin-right: 1vw;
+}
+
+.tech-item-overview-name {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #111;
+}
+
+.tech-item-detail-overview {
+  display: flex;
+  align-items: center;
+}
+
+.tech-item-detail {
+  position: absolute;
+  top: -1vh;
+  left: -1vw;
+  z-index: 1;
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: white;
+  padding: 2vh 2vw;
+  margin: 1vh 1vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 0.8rem 0.1rem #8ba2c7;
+}
+
+.tech-item-detail-overview {
+  margin-bottom: 2vh;
+}
+
+.tech-item-detail-content-list {
+  font-size: 1vw;
+  color: #5b5e61;
+}
+
+.tech-item-detail-content-list > li {
+  margin: 0.8vh 0;
+}
+
+.tech-item-detail-content-list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.tech-item-detail-show {
+  display: block;
+  animation: expand 0.15s steps(120);
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.meter {
+  display: block;
+  height: 1.2vh;
+  width: 10vw;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+  border-radius: 0.5vh;
+  background-color: #f3efef;
+}
+
+.proficiency-bar {
+  height: inherit;
+  width: 0;
+  border-radius: inherit;
+  background-color: #4caf50;
+}
+
+.progressing {
+  animation-delay: 0.15s;
+  animation-duration: 0.2s;
+  animation-name: progressbar;
+  animation-timing-function: steps(120);
+  animation-fill-mode: forwards;
+}
+
+@keyframes progressbar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--tech-proficency-bar-width);
+  }
 }
 
 @media screen and (max-width: 768px) {
