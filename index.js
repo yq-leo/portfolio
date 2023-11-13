@@ -1,7 +1,7 @@
 // Part1: Nav Bar
 function handleNavTogglerClick() {
   const navBarList = document.querySelector(".nav-bar-list");
-  navBarList.classList.toggle("show");
+  navBarList.classList.toggle("nav-bar-list-show");
 
   const togglerLines = document.querySelectorAll(".toggler-line");
   togglerLines[0].classList.toggle("toggler-cross-1");
@@ -11,7 +11,7 @@ function handleNavTogglerClick() {
 
 function handleNavItemClick() {
   const navBarList = document.querySelector(".nav-bar-list");
-  navBarList.classList.remove("show");
+  navBarList.classList.remove("nav-bar-list-show");
 
   const togglerLines = document.querySelectorAll(".toggler-line");
   togglerLines[0].classList.remove("toggler-cross-1");
