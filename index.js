@@ -44,7 +44,9 @@ tech_proficiency_map = {
   opencv: "70%",
 };
 
-document.querySelectorAll(".about-tech-cat-list-item").forEach((techItem) =>
+const techListItems = document.querySelectorAll(".about-tech-cat-list-item");
+
+techListItems.forEach((techItem) =>
   techItem.addEventListener("mouseenter", (e) => {
     const item = e.target;
     document
@@ -60,7 +62,24 @@ document.querySelectorAll(".about-tech-cat-list-item").forEach((techItem) =>
   })
 );
 
-document.querySelectorAll(".about-tech-cat-list-item").forEach((techItem) =>
+techListItems.forEach((techItem) =>
+  techItem.addEventListener("click", (e) => {
+    let item = e.target;
+    while (!item.id) item = item.parentElement;
+    document
+      .querySelector(".about-item-tech-group-list")
+      .style.setProperty(
+        "--tech-proficency-bar-width",
+        tech_proficiency_map[item.id]
+      );
+    item
+      .querySelector(".tech-item-detail")
+      .classList.add("tech-item-detail-show");
+    item.querySelector(".proficiency-bar").classList.add("progressing");
+  })
+);
+
+techListItems.forEach((techItem) =>
   techItem.addEventListener("mouseleave", (e) => {
     const item = e.target;
     document
