@@ -22,10 +22,10 @@ function handleNavItemClick() {
 // Part3: About
 tech_proficiency_map = {
   javascript: "95%",
-  python: "85%",
+  python: "90%",
   java: "75%",
   cpp: "65%",
-  go: "60%",
+  go: "50%",
   html: "90%",
   css: "90%",
   react: "90%",

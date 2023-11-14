@@ -90,6 +90,17 @@
   font-weight: 500;
 }
 
+.about-item-tech-group-list {
+  --tech-proficency-bar-width: 0%;
+  --tech-cat-item-card-margin: 1vh 1vw;
+  --tech-cat-item-card-vertical-padding: 1vh;
+  --tech-cat-item-card-horizontal-padding: 1vw;
+  --tech-cat-item-card-box-shadow: 0 0 0.8vh 0.1vh #8ba2c7;
+  --tech-cat-item-detail-card-top: -1vh;
+  --tech-cat-item-detail-card-left: -1vw;
+  --expand-animation-duration: 0.15s;
+}
+
 .about-tech-group-item {
   margin: 1.5vh 0;
 }
@@ -98,7 +109,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .about-tech-group-item-name {
@@ -117,10 +127,11 @@
 .tech-item-overview {
   display: flex;
   align-items: center;
-  padding: 1vh 1vw;
-  margin: 1vh 1vw;
+  margin: var(--tech-cat-item-card-margin);
+  padding: var(--tech-cat-item-card-vertical-padding)
+    var(--tech-cat-item-card-horizontal-padding);
   border-radius: 0.5vw;
-  box-shadow: 0 0 0.8rem 0.1rem #8ba2c7;
+  box-shadow: var(--tech-cat-item-card-box-shadow);
   width: 13.8vw;
   box-sizing: border-box;
 }
@@ -144,17 +155,24 @@
 
 .tech-item-detail {
   position: absolute;
-  top: -1vh;
-  left: -1vw;
+  top: var(--tech-cat-item-detail-card-top);
+  left: var(--tech-cat-item-detail-card-left);
   z-index: 1;
   display: none;
   white-space: nowrap;
   overflow: hidden;
   background-color: white;
-  padding: 2vh 2vw;
-  margin: 1vh 1vw;
+  margin: var(--tech-cat-item-card-margin);
+  padding: calc(
+      var(--tech-cat-item-card-vertical-padding) -
+        var(--tech-cat-item-detail-card-top)
+    )
+    calc(
+      var(--tech-cat-item-card-horizontal-padding) -
+        var(--tech-cat-item-detail-card-left)
+    );
   border-radius: 1vw;
-  box-shadow: 0 0 0.8rem 0.1rem #8ba2c7;
+  box-shadow: 0 0 0.8vh 0.1vh #8ba2c7;
 }
 
 .tech-item-detail-overview {
@@ -176,7 +194,7 @@
 
 .tech-item-detail-show {
   display: block;
-  animation: expand 0.15s steps(120);
+  animation: expand var(--expand-animation-duration) steps(120);
 }
 
 @keyframes expand {
@@ -206,7 +224,7 @@
 }
 
 .progressing {
-  animation-delay: 0.15s;
+  animation-delay: var(--expand-animation-duration);
   animation-duration: 0.2s;
   animation-name: progressbar;
   animation-timing-function: steps(120);
@@ -281,5 +299,52 @@
 
   .about-edu-item-placeholder {
     display: none;
+  }
+
+  .about-item-tech-group-list {
+    --tech-cat-item-card-margin: 0.5vh 2vw;
+    --tech-cat-item-card-vertical-padding: 0.5vh;
+    --tech-cat-item-card-horizontal-padding: 2vw;
+    --tech-cat-item-card-box-shadow: 0 0 0.8vh 0.1vh #8ba2c7;
+    --tech-cat-item-detail-card-top: -0.5vh;
+    --tech-cat-item-detail-card-left: -2vw;
+  }
+
+  .about-tech-group-item-name {
+    font-size: 2.4vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+
+  .about-tech-cat-list {
+    /* justify-content: center; */
+  }
+
+  .about-tech-cat-list-item {
+    margin: 1vh 2vw;
+  }
+
+  .tech-item-overview {
+    width: 34vw;
+    border-radius: 1vw;
+  }
+
+  .tech-item-overview-logo {
+    height: 5vh;
+    width: 5vh;
+    margin-right: 3vw;
+  }
+
+  .tech-item-overview-name {
+    font-size: 1.5vh;
+  }
+
+  .tech-item-detail-content-list {
+    font-size: 1.5vh;
+  }
+
+  .meter {
+    width: 35vw;
   }
 }
