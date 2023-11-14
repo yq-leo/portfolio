@@ -240,6 +240,7 @@
   }
 }
 
+/* Mobile Version */
 @media screen and (max-width: 768px) {
   #section-about {
     top: -6vh;
@@ -334,6 +335,10 @@
 
   .tech-item-overview-name {
     font-size: 1.8vh;
+  }
+
+  .tech-item-detail {
+    border-radius: 2vw;
   }
 
   .tech-item-detail-content-list {
