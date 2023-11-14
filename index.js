@@ -47,47 +47,62 @@ tech_proficiency_map = {
 const techListItems = document.querySelectorAll(".about-tech-cat-list-item");
 
 techListItems.forEach((techItem) =>
-  techItem.addEventListener("mouseenter", (e) => {
-    const item = e.target;
+  techItem.addEventListener("mouseenter", () => {
     document
       .querySelector(".about-item-tech-group-list")
       .style.setProperty(
         "--tech-proficency-bar-width",
-        tech_proficiency_map[item.id]
+        tech_proficiency_map[techItem.id]
       );
-    item
+    techItem
       .querySelector(".tech-item-detail")
       .classList.add("tech-item-detail-show");
-    item.querySelector(".proficiency-bar").classList.add("progressing");
+    techItem.querySelector(".proficiency-bar").classList.add("progressing");
   })
 );
 
 techListItems.forEach((techItem) =>
-  techItem.addEventListener("click", (e) => {
-    let item = e.target;
-    while (!item.id) item = item.parentElement;
+  techItem.addEventListener("click", () => {
     document
       .querySelector(".about-item-tech-group-list")
       .style.setProperty(
         "--tech-proficency-bar-width",
-        tech_proficiency_map[item.id]
+        tech_proficiency_map[techItem.id]
       );
-    item
+    techItem
       .querySelector(".tech-item-detail")
       .classList.add("tech-item-detail-show");
-    item.querySelector(".proficiency-bar").classList.add("progressing");
+    techItem.querySelector(".proficiency-bar").classList.add("progressing");
   })
 );
 
 techListItems.forEach((techItem) =>
-  techItem.addEventListener("mouseleave", (e) => {
-    const item = e.target;
+  techItem.addEventListener("mouseleave", () => {
     document
       .querySelector(".about-item-tech-group-list")
       .style.setProperty("--tech-proficency-bar-width", "0%");
-    item
+    techItem
       .querySelector(".tech-item-detail")
       .classList.remove("tech-item-detail-show");
-    item.querySelector(".proficiency-bar").classList.remove("progressing");
+    techItem.querySelector(".proficiency-bar").classList.remove("progressing");
   })
 );
+
+document.addEventListener("click", (e) => {
+  const flag = Array.from(techListItems).some((techItem) =>
+    techItem.contains(e.target)
+  );
+  if (!flag) {
+    document
+      .querySelector(".about-item-tech-group-list")
+      .style.setProperty("--tech-proficency-bar-width", "0%");
+    techListItems.forEach((techItem) => {
+      techItem
+        .querySelector(".tech-item-detail")
+        .classList.remove("tech-item-detail-show");
+      techItem
+        .querySelector(".proficiency-bar")
+        .classList.remove("progressing");
+    });
+  }
+});
