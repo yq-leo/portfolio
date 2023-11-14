@@ -259,7 +259,7 @@
   }
 
   .about-content-list-item {
-    margin: 3vh 0;
+    margin: 3vh 0 5vh 0;
   }
 
   .about-content-list-item-title {
@@ -303,7 +303,7 @@
 
   .about-item-tech-group-list {
     --tech-cat-item-card-margin: 0.5vh 2vw;
-    --tech-cat-item-card-vertical-padding: 0.5vh;
+    --tech-cat-item-card-vertical-padding: 1vh;
     --tech-cat-item-card-horizontal-padding: 2vw;
     --tech-cat-item-card-box-shadow: 0 0 0.8vh 0.1vh #8ba2c7;
     --tech-cat-item-detail-card-top: -0.5vh;
@@ -311,22 +311,18 @@
   }
 
   .about-tech-group-item-name {
-    font-size: 2.4vh;
+    font-size: 2.7vh;
     margin-top: 2vh;
     margin-bottom: 1vh;
     text-align: center;
   }
 
-  .about-tech-cat-list {
-    /* justify-content: center; */
-  }
-
   .about-tech-cat-list-item {
-    margin: 1vh 2vw;
+    margin: 1vh 0.5vw;
   }
 
   .tech-item-overview {
-    width: 34vw;
+    width: 37vw;
     border-radius: 1vw;
   }
 
@@ -337,11 +333,11 @@
   }
 
   .tech-item-overview-name {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 
   .tech-item-detail-content-list {
-    font-size: 1.5vh;
+    font-size: 1.6vh;
   }
 
   .meter {
