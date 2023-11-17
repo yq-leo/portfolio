@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/NavBar.css" />
     <link rel="stylesheet" href="css/Homepage.css" />
     <link rel="stylesheet" href="css/About.css" />
+    <link rel="stylesheet" href="css/Experiences.css" />
     <title>Document</title>
   </head>
   <body>
@@ -37,7 +38,7 @@
           <a href="#section-about">About</a>
         </li>
         <li class="nav-bar-list-item" onclick="handleNavItemClick()">
-          <a href="#">Experiences</a>
+          <a href="#section-experiences">Experiences</a>
         </li>
         <li class="nav-bar-list-item" onclick="handleNavItemClick()">
           <a href="#">Projects</a>
@@ -108,6 +109,7 @@
                   <img
                     class="about-school-logo"
                     src="images/school_logos/uiuc_logo.jpg"
+                    alt="UIUC"
                   />
                   <div class="about-edu-item-container">
                     <header class="about-edu-item-header">
@@ -146,6 +148,7 @@
                   <img
                     class="about-school-logo"
                     src="images/school_logos/dlut_logo.png"
+                    alut="DLUT"
                   />
                   <div class="about-edu-item-container">
                     <header class="about-edu-item-header">
@@ -184,6 +187,7 @@
                   <img
                     class="about-school-logo"
                     src="images/school_logos/ucla_logo.png"
+                    alt="UCLA"
                   />
                   <div class="about-edu-item-container">
                     <header class="about-edu-item-header">
@@ -960,6 +964,70 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <!-- part 4: Experiences -->
+    <div id="section-experiences"></div>
+    <section class="experiences">
+      <header class="experiences-title">Experiences</header>
+      <ul class="experiences-container-list">
+        <li class="experiences-item">
+          <div class="experiences-item-header-container jreamscape-banner">
+            <header class="experiences-item-header-content">JreamScape</header>
+          </div>
+          <img
+            class="experiences-item-icon"
+            src="images/company_logos/jreamscape.jpeg"
+            alt="Meitaun"
+          />
+          <div class="experiences-item-context-container">
+            <header class="experiences-item-context-title">
+              Software Engineer Intern
+            </header>
+            <div class="experiences-item-context-timespan">
+              Sept 2023 - Present
+            </div>
+            <div class="experiences-item-context-detail">
+              <div class="experiences-item-context-detail-intro">
+                Participate in the flagship project of the company, IListenGPT,
+                which integrated ChatGPT with Microsoft Voice for speech-to-text
+                conversion and real-time chat interaction; Developed front-end
+                and full-stack features of IListenGPT independently, including a
+                user profile and personal prompts management page, using
+                Express, React, and TypeScript
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="experiences-item">
+          <div class="experiences-item-header-container meituan-banner">
+            <header class="experiences-item-header-content">Meituan</header>
+          </div>
+          <img
+            class="experiences-item-icon"
+            src="images/company_logos/meituan.png"
+            alt="Meitaun"
+          />
+          <div class="experiences-item-context-container">
+            <header class="experiences-item-context-title">
+              Front-End Developer Intern
+            </header>
+            <div class="experiences-item-context-timespan">
+              May 2023 - Aug 2023
+            </div>
+            <div class="experiences-item-context-detail">
+              <div class="experiences-item-context-detail-intro">
+                Assisted in adding front-end features to and debugging exisiting
+                components in Meituan's CRM application using Vue3; Developed
+                front-end components of Meituan's Aesthetic Medicine Product
+                page that allows users to view product price and get discount
+                coupons using React Native, TypeScirpt, and Redux Toolkit.
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <script src="index.js"></script>
