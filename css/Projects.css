@@ -1,0 +1,71 @@
+#section-projects {
+  position: relative;
+  top: -2vh;
+}
+
+.projects {
+  background-color: #f7f7f7;
+  padding: 5vh 5vw;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.projects-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.projects-item {
+  display: flex;
+  margin: 4vh 0;
+  padding: 3vh 1vw;
+  background-color: #fff;
+  --separation-padding: 2vw;
+}
+
+.projects-item-logo-container {
+  padding: 2vh var(--separation-padding);
+  border-right: 2px solid #d9d9d9;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.projects-item-logo {
+  width: 15vw;
+  object-fit: cover;
+}
+
+.projects-item-content-container {
+  padding: 0 var(--separation-padding);
+}
+
+.projects-item-content-title {
+  font-size: 2vw;
+  font-weight: 500;
+  color: #93b8c3;
+  margin-bottom: 1.5vh;
+}
+
+.projects-item-content-detail {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  color: #5b5e61;
+  margin-bottom: 1.5vh;
+}
+
+.projects-item-content-detail > a:hover {
+  color: #000;
+}
+
+.projects-item-content-tech::before {
+  content: "Tech: ";
+  font-weight: 500;
+}
+
+.projects-item-content-tech {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  color: #0062ff;
+}

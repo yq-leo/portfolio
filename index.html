@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/Homepage.css" />
     <link rel="stylesheet" href="css/About.css" />
     <link rel="stylesheet" href="css/Experiences.css" />
+    <link rel="stylesheet" href="css/Projects.css" />
     <title>Qi Yu</title>
   </head>
   <body>
@@ -1026,7 +1027,7 @@
         <li class="projects-item">
           <div class="projects-item-logo-container">
             <img
-              class="projects-logo-img"
+              class="projects-item-logo"
               src="images/project_logos/ratemyrsos.jpg"
               alt="RateMyRSOs"
             />
@@ -1036,9 +1037,65 @@
             <div class="projects-item-content-detail">
               Built a full-stack web application, RateMyRSOs, that allows
               students at UIUC to post reviews and ratings to UIUC’s different
-              Registered Student Organizations (RSOs).
+              Registered Student Organizations (RSOs); Developed the front-end
+              of the application using React; Developed the back-end of the
+              application using Express; Deployed the SQL databases that stores
+              information of RSOs and users on Google Cloud Platform (GCP).
             </div>
-            <div class="projects-item-content-tech"></div>
+            <div class="projects-item-content-tech">
+              React, Express, Node.js, MySQL, Google Cloud Platform
+            </div>
+          </div>
+        </li>
+        <li class="projects-item">
+          <div class="projects-item-logo-container">
+            <img
+              class="projects-item-logo"
+              src="images/project_logos/ece408.png"
+              alt="Parallelization over LeNet-5"
+            />
+          </div>
+          <div class="projects-item-content-container">
+            <header class="projects-item-content-title">
+              Parallelization over LeNet-5
+            </header>
+            <div class="projects-item-content-detail">
+              Implemented LeNet-5 using CUDA C++; Optimized the forward pass of
+              convolution layers using parallelization techniques including
+              joint register and shared memory tiling SGEMM. Results beats 90%
+              fellow competitors in terms of program execution time.
+            </div>
+            <div class="projects-item-content-tech">
+              CUDA, C++, Profiling, NVIDIA NSight Compute
+            </div>
+          </div>
+        </li>
+        <li class="projects-item">
+          <div class="projects-item-logo-container">
+            <img
+              class="projects-item-logo"
+              src="images/project_logos/ddi.png"
+              alt="DDI Detection by Drug KG"
+            />
+          </div>
+          <div class="projects-item-content-container">
+            <header class="projects-item-content-title">
+              DDI Detection by Drug KG
+            </header>
+            <div class="projects-item-content-detail">
+              Construct a large-scale Drug Knowledge Graph (KG) from multiple
+              pharmaceutical databases (<a
+                href="https://go.drugbank.com/"
+                target="_blank"
+                >DrugBank</a
+              >,
+              <a href="https://www.pharmgkb.org/" target="_blank">PharmGKB</a>,
+              etc.); Proposed a Conv-LSTM-based network Light-CLSTM to predict
+              Drug-Drug Interactions (DDI) and achieved 0.99 AUPR and 0.88 MCC.
+            </div>
+            <div class="projects-item-content-tech">
+              PyTorch, TensorFlow, SPARQL, Data Mining, Knowledge Graph
+            </div>
           </div>
         </li>
       </ul>
