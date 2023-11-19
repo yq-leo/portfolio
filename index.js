@@ -20,7 +20,7 @@ function handleNavItemClick() {
 }
 
 // Part3: About
-tech_proficiency_map = {
+const tech_proficiency_map = {
   javascript: "95%",
   python: "90%",
   java: "75%",
@@ -106,3 +106,17 @@ document.addEventListener("click", (e) => {
     });
   }
 });
+
+// Part4: Projects
+const toggleProjectsBtn = document.querySelector(".projects-collapsible-btn");
+const toggleProjectsBtnText = ["Show More", "Hide"];
+let toggleProjectsBtnIndex = 0;
+
+function handleProjectListCollapse() {
+  const projectItems = Array.from(document.querySelectorAll(".projects-item"));
+  for (let i = 3; i < projectItems.length; i++) {
+    projectItems[i].classList.toggle("projects-item-hide");
+  }
+  toggleProjectsBtnIndex = 1 - toggleProjectsBtnIndex;
+  toggleProjectsBtn.innerText = toggleProjectsBtnText[toggleProjectsBtnIndex];
+}

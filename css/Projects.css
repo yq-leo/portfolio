@@ -19,10 +19,15 @@
 
 .projects-item {
   display: flex;
-  margin: 4vh 0;
+  margin: 5vh 0;
   padding: 3vh 1vw;
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   --separation-padding: 2vw;
+}
+
+.projects-item-hide {
+  display: none;
 }
 
 .projects-item-logo-container {
@@ -67,5 +72,28 @@
 .projects-item-content-tech {
   font-size: 1.2vw;
   line-height: 1.5;
+  color: #0062ff;
+}
+
+.projects-collapsible-btn-container {
+  text-align: center;
+}
+
+.projects-collapsible-btn {
+  display: inline-block;
+  margin: 1vh 0;
+  padding: 1.5vh 3vw;
+  border-radius: 1vh;
+  font-size: 1.2vw;
+  font-weight: 500;
+  background-color: #0062ff;
+  border: 1px solid #0062ff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.projects-collapsible-btn:hover {
+  background-color: #fff;
   color: #0062ff;
 }
