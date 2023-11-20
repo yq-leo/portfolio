@@ -161,4 +161,9 @@
     border-radius: 2vw;
     font-size: 2vh;
   }
+
+  .projects-collapsible-btn:hover {
+    background-color: #0062ff;
+    color: #fff;
+  }
 }
