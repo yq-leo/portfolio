@@ -1,0 +1,50 @@
+#section-publications {
+  position: relative;
+  top: -2vh;
+}
+
+.publications {
+  background-color: #fff;
+  padding: 5vh 5vw;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.publications-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.publications-item {
+  margin: 3vh 0;
+  padding: 2vh 1vw;
+  background-color: #e3ebf5;
+  border-radius: 1vw;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  font-size: 1.3vw;
+  color: #222;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  #section-publications {
+    top: -6vh;
+  }
+
+  .publications {
+    padding: 2vh 5vw;
+  }
+
+  .publications-title {
+    font-size: 4vh;
+    margin: 2vh 0;
+  }
+
+  .publications-item {
+    margin: 3vh 2vw;
+    padding: 2vh 4vw;
+    font-size: 2vh;
+  }
+}
