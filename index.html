@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/Experiences.css" />
     <link rel="stylesheet" href="css/Projects.css" />
     <link rel="stylesheet" href="css/Publications.css" />
+    <link rel="stylesheet" href="css/Contact.css" />
     <title>Qi Yu</title>
   </head>
   <body>
@@ -49,7 +50,7 @@
           <a href="#section-publications">Publications</a>
         </li>
         <li class="nav-bar-list-item" onclick="handleNavItemClick()">
-          <a href="#">Contact</a>
+          <a href="#section-contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -1228,6 +1229,112 @@
           Environment, CN 202110789792.5.
         </li>
       </ul>
+    </section>
+
+    <!-- part 7: Contact -->
+    <div id="section-contact"></div>
+    <section class="contact">
+      <header class="contact-title">Contact</header>
+      <div class="contact-container">
+        <div class="contact-greeting-container">
+          <div class="contact-greeting-text">
+            Have questions? Or just want to say hello? Send me a message here!
+          </div>
+          <div class="contact-greeting-img-container">
+            <img
+              class="contact-greeting-img"
+              src="images/hello.png"
+              alt="hello"
+            />
+          </div>
+          <ul class="contact-social-media-list">
+            <li class="contact-social-media-item">
+              <a href="https://github.com/yq-leo" target="_blank">
+                <img
+                  class="contact-social-media-item-icon"
+                  src="images/social_logos/github.svg"
+                  alt="GitHub"
+                />
+              </a>
+            </li>
+            <li class="contact-social-media-item">
+              <a href="https://www.linkedin.com/in/qi-leo-yu/" target="_blank">
+                <img
+                  class="contact-social-media-item-icon"
+                  src="images/social_logos/linkedin.svg"
+                  alt="LinkedIn"
+                />
+              </a>
+            </li>
+            <li class="contact-social-media-item">
+              <a href="https://github.com/yq-leo" target="_blank">
+                <img
+                  class="contact-social-media-item-icon"
+                  src="images/social_logos/leetcode.svg"
+                  alt="LeetCode"
+                />
+              </a>
+            </li>
+            <li class="contact-social-media-item">
+              <a href="https://github.com/yq-leo" target="_blank">
+                <img
+                  class="contact-social-media-item-icon"
+                  src="images/social_logos/instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="contact-form-item-wrapper">
+              <div class="contact-form-item-title">Name</div>
+              <input
+                class="contact-form-input"
+                type="text"
+                name="name"
+                placeholder="Enter your name here"
+                min-width="1"
+                max-width="255"
+                required
+              />
+            </div>
+            <div class="contact-form-item-wrapper">
+              <div class="contact-form-item-title">Email</div>
+              <input
+                class="contact-form-input"
+                type="email"
+                name="email"
+                placeholder="Enter your email here"
+                min-width="1"
+                max-width="255"
+                required
+              />
+            </div>
+            <div class="contact-form-item-wrapper">
+              <div class="contact-form-item-title">Message</div>
+              <textarea
+                class="contact-form-textarea"
+                name="message"
+                placeholder="Enter your message here"
+                rows="7"
+                min-width="1"
+                max-width="1024"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-form-service">Powered By Google Forms</div>
+            <div class="contact-form-submit-btn-container" type="submit">
+              <input
+                class="contact-form-submit-btn"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <script src="index.js"></script>

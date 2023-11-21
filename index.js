@@ -107,7 +107,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Part4: Projects
+// Part5: Projects
 const toggleProjectsBtn = document.querySelector(".projects-collapsible-btn");
 const toggleProjectsBtnText = ["Show More", "Hide"];
 let toggleProjectsBtnIndex = 0;
@@ -120,3 +120,29 @@ function handleProjectListCollapse() {
   toggleProjectsBtnIndex = 1 - toggleProjectsBtnIndex;
   toggleProjectsBtn.innerText = toggleProjectsBtnText[toggleProjectsBtnIndex];
 }
+
+// Part7: Contact
+const contactForm = document.querySelector("#contact-form");
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = contactForm.elements["name"].value;
+  const email = contactForm.elements["email"].value;
+  const message = contactForm.elements["message"].value;
+
+  const url = `https://docs.google.com/forms/d/e/1FAIpQLSch8gVBawLm_EHn1Za5EKUY1aaPpqjjvXbEUqufuDBplarD9g/formResponse?usp=pp_url&entry.1023284505=${name}&entry.1480291378=${email}&entry.364352625=${message}`;
+  fetch(url, { mode: "no-cors" })
+    .then((res) => {
+      console.log(res);
+      contactForm.reset();
+      alert(
+        "Your message has been received! Thank you. I will get back to you soon."
+      );
+    })
+    .catch((err) => {
+      console.log(err);
+      alert("Sorry, something went wrong! Please try again.");
+    })
+    .finally(() => {
+      contactForm.reset();
+    });
+});

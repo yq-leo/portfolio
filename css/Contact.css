@@ -1,0 +1,135 @@
+#section-contact {
+  position: relative;
+  top: -2vh;
+}
+
+.contact {
+  background-color: #edeff4;
+  padding: 5vh 5vw;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.contact-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin: 3vh 0;
+}
+
+.contact-container > * {
+  flex: 1;
+  margin: 0 3vw;
+}
+
+.contact-greeting-container {
+  text-align: center;
+}
+
+.contact-greeting-container > * {
+  --margin-vertical: 4vh;
+  margin-top: var(--margin-vertical);
+  margin-bottom: var(--margin-vertical);
+}
+
+.contact-greeting-text {
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #447de8;
+  line-height: 1.5;
+}
+
+.contact-greeting-img-container {
+  --horizontal-margin: 1vw;
+  background-color: #fff;
+  border-radius: 1vw;
+  margin-left: var(--horizontal-margin);
+  margin-right: var(--horizontal-margin);
+}
+
+.contact-greeting-img {
+  height: 30vh;
+  padding-bottom: 3vh;
+}
+
+.contact-social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-social-media-item {
+  height: 2.5vw;
+  width: 2.5vw;
+  margin: 0 1.5vw;
+}
+
+.contact-social-media-item-icon {
+  display: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-social-media-item-icon:hover {
+  transform: scale(1.2);
+}
+
+.contact-form-item-wrapper {
+  margin: 2vh 0;
+}
+
+.contact-form-item-title {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 1vh;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  padding: 1vh 1vw;
+  border-radius: 0.5vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 0;
+  font-size: 1vw;
+  font-family: inherit;
+  color: #111;
+  line-height: 1.5;
+}
+
+.contact-form-service {
+  text-align: center;
+  margin: 3vh 0;
+  font-size: 0.8vw;
+  color: #bfc2c5;
+}
+
+.contact-form-submit-btn-container {
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.contact-form-submit-btn {
+  padding: 1.5vh 5vw;
+  border-radius: 1vh;
+  background-color: #0062ff;
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form-submit-btn:hover {
+  background-color: #fff;
+  color: #0062ff;
+  border: 1px solid #0062ff;
+}
