@@ -21,3 +21,36 @@ ul {
 li {
   display: block;
 }
+
+.section-locator {
+  position: relative;
+  top: -2vh;
+}
+
+.section-container {
+  padding: 5vh 5vw;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.section-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .section-locator {
+    top: -6vh;
+  }
+
+  .section-container {
+    padding: 2vh 5vw;
+  }
+
+  .section-title {
+    font-size: 4vh;
+    margin: 2vh 0;
+  }
+}

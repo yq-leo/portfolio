@@ -1,20 +1,5 @@
-#section-contact {
-  position: relative;
-  top: -2vh;
-}
-
 .contact {
   background-color: #edeff4;
-  padding: 5vh 5vw;
-  font-family: "Ubuntu", sans-serif;
-  color: #111;
-}
-
-.contact-title {
-  font-size: 3vw;
-  font-weight: bold;
-  margin: 3vh 0;
-  text-align: center;
 }
 
 .contact-container {
@@ -140,19 +125,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  #section-contact {
-    top: -6vh;
-  }
-
-  .contact {
-    padding: 2vh 5vw;
-  }
-
-  .contact-title {
-    font-size: 4vh;
-    margin: 2vh 0;
-  }
-
   .contact-container {
     display: block;
     margin: 3vh 7vw;

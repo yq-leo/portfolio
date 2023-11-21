@@ -1,22 +1,7 @@
-#section-experiences {
-  position: relative;
-  top: -2vh;
-}
-
 .experiences {
   background-color: #edeff4;
-  padding: 5vh 5vw 8vh;
-  font-family: "Ubuntu", sans-serif;
-  color: #111;
   --experience-card-border-radius: 2vw;
   --icon-size: 6vw;
-}
-
-.experiences-title {
-  font-size: 3vw;
-  font-weight: bold;
-  margin: 3vh 0;
-  text-align: center;
 }
 
 .experiences-container-list {
@@ -105,19 +90,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  #section-experiences {
-    top: -6vh;
-  }
-
   .experiences {
-    padding: 2vh 5vw;
     --experience-card-border-radius: 2vh;
     --icon-size: 9vh;
-  }
-
-  .experiences-title {
-    font-size: 4vh;
-    margin: 2vh 0;
   }
 
   .experiences-container-list {

@@ -1,20 +1,5 @@
-#section-about {
-  position: relative;
-  top: -2vh;
-}
-
 .about {
   background-color: #fafafa;
-  padding: 5vh 5vw;
-  font-family: "Ubuntu", sans-serif;
-  color: #111;
-}
-
-.about-title {
-  font-size: 3vw;
-  font-weight: bold;
-  margin: 3vh 0;
-  text-align: center;
 }
 
 .about-content-list {

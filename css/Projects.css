@@ -1,20 +1,5 @@
-#section-projects {
-  position: relative;
-  top: -2vh;
-}
-
 .projects {
   background-color: #f7f7f7;
-  padding: 5vh 5vw;
-  font-family: "Ubuntu", sans-serif;
-  color: #111;
-}
-
-.projects-title {
-  font-size: 3vw;
-  font-weight: bold;
-  margin: 3vh 0;
-  text-align: center;
 }
 
 .projects-item {
@@ -100,19 +85,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  #section-projects {
-    top: -6vh;
-  }
-
-  .projects {
-    padding: 2vh 5vw;
-  }
-
-  .projects-title {
-    font-size: 4vh;
-    margin: 2vh 0;
-  }
-
   .projects-item {
     display: block;
     margin: 5vh 2vw;
