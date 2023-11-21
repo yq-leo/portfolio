@@ -227,19 +227,6 @@
 
 /* Mobile Version */
 @media screen and (max-width: 768px) {
-  #section-about {
-    top: -6vh;
-  }
-
-  .about {
-    padding: 2vh 5vw;
-  }
-
-  .about-title {
-    font-size: 4vh;
-    margin: 2vh 0;
-  }
-
   .about-content-list {
     padding: 0 2.5vw;
   }
