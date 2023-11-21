@@ -90,6 +90,8 @@
 
 .contact-form-input::placeholder,
 .contact-form-textarea::placeholder {
+  font-size: 1vw;
+  font-family: inherit;
   color: #a3aba9;
 }
 
@@ -127,7 +129,7 @@
 @media screen and (max-width: 768px) {
   .contact-container {
     display: block;
-    margin: 3vh 7vw;
+    margin: 3vh 4vw;
   }
 
   .contact-container > * {
@@ -139,7 +141,7 @@
   }
 
   .contact-greeting-text {
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin-top: 0;
   }
 
@@ -151,18 +153,19 @@
   }
 
   .contact-greeting-img {
-    height: 35vw;
+    height: 40vw;
     padding-bottom: 1vh;
   }
 
   .contact-social-media-item {
-    height: 9vw;
-    width: 9vw;
-    margin: 0 3vw;
+    height: 10vw;
+    width: 10vw;
+    margin: 0 3.5vw;
   }
 
   .contact-form-container {
     margin-top: 5vh;
+    padding: 0 3vw;
   }
 
   .contact-form-item-title {
@@ -172,14 +175,24 @@
   .contact-form-input,
   .contact-form-textarea {
     padding: 1vh 2vw;
-    font-size: 1.8vh;
+    font-size: 2vh;
     border-radius: 1vw;
   }
 
-  .contact-form-service {
-    font-size: 1.5vh;
+  .contact-form-input::placeholder,
+  .contact-form-textarea::placeholder {
+    font-size: 2vh;
+    color: #a3aba9;
   }
 
+  .contact-form-service {
+    font-size: 1.8vh;
+    margin: 2.5vh 0;
+  }
+
+  .contact-form-submit-btn-container {
+    margin: 2.5vh 0 3vh;
+  }
   .contact-form-submit-btn {
     padding: 1.5vh 12vw;
     border-radius: 1vh;
