@@ -14,3 +14,9 @@
   font-weight: 500;
   font-size: 1.2vw;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-text {
+    font-size: 2vh;
+  }
+}
