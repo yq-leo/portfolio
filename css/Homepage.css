@@ -53,6 +53,59 @@
   white-space: nowrap;
 }
 
+.homepage-info-identity {
+  display: inline-block;
+  margin: 0;
+}
+
+.homepage-info-identity::after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-right: 0.2vw solid;
+  width: 0;
+  animation: typing 5s steps(24, end) infinite, blink 1s steps(2) infinite,
+    moveup 15s steps(1) infinite;
+}
+
+@keyframes moveup {
+  0% {
+    content: "UIUC CS Student";
+  }
+  33% {
+    content: "Front-end Developer";
+  }
+  66% {
+    content: "Full-stack Developer";
+  }
+}
+
+@keyframes typing {
+  10% {
+    width: 0;
+  }
+  30% {
+    width: 100%;
+  }
+  70% {
+    width: 100%;
+  }
+  90% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #dbdfe4;
+  }
+}
+
 .homepage-info-content {
   font-size: 1.4vw;
   letter-spacing: 0.5px;
@@ -98,7 +151,7 @@
   }
 
   .homepage-info {
-    width: 80vw;
+    width: 90vw;
     transform: translate(-50%, -50%);
   }
 
@@ -118,9 +171,21 @@
     font-size: 4vh;
   }
 
+  .homepage-info-identity {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .homepage-info-identity::after {
+    border-right: 0.3vh solid;
+  }
+
   .homepage-info-content {
     font-size: 2.2vh;
     margin-top: 4vh;
+    padding: 0 5vw;
   }
 
   .homepage-info-resume-btn {
