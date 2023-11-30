@@ -67,10 +67,10 @@
   border-right: 0.2vw solid;
   width: 0;
   animation: typing 5s steps(24, end) infinite, blink 1s steps(2) infinite,
-    moveup 15s steps(1) infinite;
+    change-identity 15s steps(1) infinite;
 }
 
-@keyframes moveup {
+@keyframes change-identity {
   0% {
     content: "UIUC CS Student";
   }
