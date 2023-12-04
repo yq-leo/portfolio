@@ -112,11 +112,11 @@
   padding: 1.5vh 5vw;
   border-radius: 1vh;
   background-color: #0062ff;
+  border: 1px solid #0062ff;
   color: #fff;
   font-size: 1.2vw;
   font-weight: 500;
   font-family: inherit;
-  border: 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -124,7 +124,6 @@
 .contact-form-submit-btn:hover {
   background-color: #fff;
   color: #0062ff;
-  border: 1px solid #0062ff;
 }
 
 @media screen and (max-width: 768px) {
