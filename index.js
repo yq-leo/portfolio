@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Part7: Contact
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.querySelector("#contact-form");
+
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = contactForm.elements["name"].value;
@@ -139,5 +140,16 @@ document.addEventListener("DOMContentLoaded", () => {
       .finally(() => {
         contactForm.reset();
       });
+  });
+
+  window.addEventListener("beforeunload", (e) => {
+    const name = contactForm.elements["name"].value;
+    const email = contactForm.elements["email"].value;
+    const message = contactForm.elements["message"].value;
+
+    if (name || email || message) {
+      e.preventDefault();
+      e.returnValue = "";
+    }
   });
 });
