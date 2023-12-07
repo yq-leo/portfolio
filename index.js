@@ -44,16 +44,15 @@ const tech_proficiency_map = {
   opencv: "70%",
 };
 
+const techList = document.querySelector(".about-item-tech-group-list");
 const techListItems = document.querySelectorAll(".about-tech-cat-list-item");
 
 techListItems.forEach((techItem) =>
   techItem.addEventListener("mouseenter", () => {
-    document
-      .querySelector(".about-item-tech-group-list")
-      .style.setProperty(
-        "--tech-proficency-bar-width",
-        tech_proficiency_map[techItem.id]
-      );
+    techList.style.setProperty(
+      "--tech-proficency-bar-width",
+      tech_proficiency_map[techItem.id]
+    );
     techItem
       .querySelector(".tech-item-detail")
       .classList.add("tech-item-detail-show");
@@ -61,26 +60,23 @@ techListItems.forEach((techItem) =>
   })
 );
 
-techListItems.forEach((techItem) =>
-  techItem.addEventListener("click", () => {
-    document
-      .querySelector(".about-item-tech-group-list")
-      .style.setProperty(
-        "--tech-proficency-bar-width",
-        tech_proficiency_map[techItem.id]
-      );
+techList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("about-tech-cat-list-item")) {
+    const techItem = e.target;
+    techList.style.setProperty(
+      "--tech-proficency-bar-width",
+      tech_proficiency_map[techItem.id]
+    );
     techItem
       .querySelector(".tech-item-detail")
       .classList.add("tech-item-detail-show");
     techItem.querySelector(".proficiency-bar").classList.add("progressing");
-  })
-);
+  }
+});
 
 techListItems.forEach((techItem) =>
   techItem.addEventListener("mouseleave", () => {
-    document
-      .querySelector(".about-item-tech-group-list")
-      .style.setProperty("--tech-proficency-bar-width", "0%");
+    techList.style.setProperty("--tech-proficency-bar-width", "0%");
     techItem
       .querySelector(".tech-item-detail")
       .classList.remove("tech-item-detail-show");
