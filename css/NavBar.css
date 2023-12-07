@@ -27,11 +27,11 @@
   font-family: "Lumanosimo", sans-serif;
 }
 
-.toggler {
+.nav-bar-toggler {
   display: none;
 }
 
-.toggler-line {
+.nav-bar-toggler-line {
   width: 4vh;
   height: 2px;
   border-radius: 1px;
@@ -41,15 +41,15 @@
   transition-duration: 0.3s;
 }
 
-.toggler-cross-1 {
+.nav-bar-toggler-cross-1 {
   transform: translateY(1.25vh) rotate(45deg);
 }
 
-.toggler-cross-2 {
+.nav-bar-toggler-cross-2 {
   opacity: 0;
 }
 
-.toggler-cross-3 {
+.nav-bar-toggler-cross-3 {
   transform: translateY(-1.25vh) rotate(-45deg);
 }
 
@@ -111,7 +111,7 @@
     flex: 1;
   }
 
-  .toggler {
+  .nav-bar-toggler {
     display: block;
   }
 }
