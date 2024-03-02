@@ -89,8 +89,7 @@
             I’m currently a Master student in Computer Science at the
             <span class="uiuc-organge"
               >University of Illinois at Urbana-Champaign (UIUC)</span
-            >
-            . I’m interested in Front-End / Full-Stack Development.
+            >. I’m a machine learning & data science enthusiast.
           </div>
           <a
             class="homepage-info-item homepage-info-resume-btn"
@@ -1123,7 +1122,7 @@
     <!-- part 5: Projects -->
     <div id="section-projects" class="section-locator"></div>
     <section class="section-container projects">
-      <header class="section-title projects-title">Projects</header>
+      <header class="section-title projects-title">Projects & Research</header>
       <ul class="projects-container-list">
         <li class="projects-item" data-aos="zoom-in-up">
           <div class="projects-item-logo-container">
@@ -1158,13 +1157,14 @@
           </div>
           <div class="projects-item-content-container">
             <header class="projects-item-content-title">
-              Parallelization over LeNet-5
+              Parallelization over forward-pass of LeNet-5
             </header>
             <div class="projects-item-content-detail">
-              Implemented LeNet-5 using CUDA C++; Optimized the forward pass of
-              convolution layers using parallelization techniques including
-              joint register and shared memory tiling SGEMM. Results beats 90%
-              fellow competitors in terms of program execution time.
+              Implemented and optimized the forward pass of convolution layers
+              of a modified LeNet-5 through multiple parallelization techniques
+              including input matrix unrolling, fixed point arithmetic, and
+              joint register & shared memory tiling SGEMM; Optimizations
+              achieved up to 10x speed up compared to the baseline.
             </div>
             <div class="projects-item-content-tech">
               CUDA, C++, Profiling, NVIDIA NSight Compute
@@ -1184,18 +1184,22 @@
               DDI Detection by Drug KG
             </header>
             <div class="projects-item-content-detail">
-              Construct a large-scale Drug Knowledge Graph (KG) from multiple
-              pharmaceutical databases (<a
+              Construct a large-scale Drug Knowledge Graph (KG) by joining
+              multiple pharmaceutical databases (<a
                 href="https://go.drugbank.com/"
                 target="_blank"
                 >DrugBank</a
               >,
               <a href="https://www.pharmgkb.org/" target="_blank">PharmGKB</a>,
-              etc.); Proposed a Conv-LSTM-based network Light-CLSTM to predict
-              Drug-Drug Interactions (DDI) and achieved 0.99 AUPR and 0.88 MCC.
+              etc.) based on drug-related entity alignment; Implemented and
+              compared multiple embedding algorithms on the constructed KG, and
+              proposed a lightweight Conv-LSTM model to predict Drug-Drug
+              Interaction (DDI) based on drug embeddings; Proposed model
+              outperformed existing end-to-end GNN models by 6% on MCC and 2% on
+              AUPR.
             </div>
             <div class="projects-item-content-tech">
-              PyTorch, TensorFlow, SPARQL, Data Mining, Knowledge Graph
+              PyTorch, SPARQL, Data Mining, Knowledge Graph
             </div>
           </div>
         </li>
@@ -1209,17 +1213,20 @@
           </div>
           <div class="projects-item-content-container">
             <header class="projects-item-content-title">
-              Prioritized List Scheduling
+              Minimum WCRT under Prioritized List Scheduling
             </header>
             <div class="projects-item-content-detail">
-              Encoded the priority assignment problem for a Directed Acyclic
-              Graph (DAG) task into an Integer Programming formulation (IP) and
-              proposed an iterative algorithm for deriving the minimum WCRT
-              bound, which involves only 12.67% variables and solves within
-              several minutes on average for instances with 50 vertices.
+              Encoded the priority assignment problem for Directed Acyclic Graph
+              (DAG) tasks into an Integer Linear Programming (ILP) formulation;
+              Designed an iterative algorithm to derive the minimum WCRT under
+              PLS algorithm; Proposed algorithm solved the ILP formulation
+              optimally by involving only 12.67% variables on average; Mainly
+              responsible for implementing the proposed algorithms and
+              conducting experiments under various settings.
             </div>
             <div class="projects-item-content-tech">
-              Python, Gurobi, Optimization, Integer Programming, DAG,
+              Python, Gurobi, Optimization, Integer Programming, Directed
+              Acyclic Graph
             </div>
           </div>
         </li>
@@ -1236,10 +1243,12 @@
               Personalized Machine Learning for Edge Computing
             </header>
             <div class="projects-item-content-detail">
-              Proposed a personalized ML schema for resource-constrained
-              distributed systems by exploiting temporal correlations among data
-              and enabling local training. Proposed method improved resource
-              utilization by 91% and reduced network communications by 84%.
+              Proposed a specialized machine learning schema for
+              resource-constrained edge computing systems by exploiting temporal
+              correlations among stream data; Proposed a two-stage classifier
+              model for client-side training and intelligent task-offloading;
+              Prototype model significantly improved network congestion and
+              resource utilization on client side.
             </div>
             <div class="projects-item-content-tech">
               PyTorch, Machine Learing, Edge Computing, IoT
@@ -1285,15 +1294,14 @@
             </header>
             <div class="projects-item-content-detail">
               Formulated the static Job-Shop Scheduling Problem (JSP) into a
-              programmable model in Factor Graph; Proposed a derivative of
-              distributed max-sum algorithm to iteratively solve the
-              programmable model. Proposed algorithm capable of resolving
-              large-scale JSPs in an industrial environment with a 3-time faster
-              speed.
+              programmable model on factor graph; Proposed a derivative of the
+              distributed max-sum algorithm to solve the NP-hard problem in a
+              heuristic way; Proposed algorithm resolved large-scale JSPs in an
+              industrial environment setting with a 3-time faster speed than
+              existing heuristic methods.
             </div>
             <div class="projects-item-content-tech">
-              C++, Job-shop Scheduling, Heuristic Algorithms, Optimization,
-              Concurrent Programming
+              C++, Job-shop Scheduling, Heuristic Algorithms, Optimization
             </div>
           </div>
         </li>
@@ -1309,19 +1317,19 @@
       <header class="section-title publications-title">Publications</header>
       <ul class="publications-container-list">
         <li class="publications-item">
-          <b>[Journal]</b> Chang, S., Bi, R., Sun, J., Liu, W., Yu, Q., Deng,
-          Q., & Gu, Z. (2022). Toward Minimum WCRT Bound for DAG Tasks Under
-          Prioritized List Scheduling Algorithms.
+          Chang, S., Bi, R., Sun, J., Liu, W., Yu, Q., Deng, Q., & Gu, Z.
+          (2022). Toward Minimum WCRT Bound for DAG Tasks Under Prioritized List
+          Scheduling Algorithms.
           <i>
             IEEE Transactions on Computer-Aided Design of Integrated Circuits
             and Systems</i
           >, 41(11), 3874-3885.
         </li>
-        <li class="publications-item">
+        <!-- <li class="publications-item">
           <b>[Patent]</b> Qi Yu, Yuhan Wang, Jinghao Sun. 2021. A Distributed
           Max-Sum Algorithm for Job Shop Scheduling in an Industry 4.0
           Environment, CN 202110789792.5.
-        </li>
+        </li> -->
       </ul>
     </section>
 

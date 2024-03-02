@@ -51,7 +51,7 @@
 }
 
 .projects-item-content-tech::before {
-  content: "Tech: ";
+  content: "Keywords & Tech: ";
   font-weight: 500;
 }
 
